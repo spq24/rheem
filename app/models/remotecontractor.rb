@@ -5,7 +5,7 @@ class RemoteContractor
 
 	attr_accessor :contractor_name, :phone, :website, :postalcode, :email, :address_one, :address_two, :city, :state
 
-	def initialize(contractor_name, contractor_name, phone, website, postalcode, email, address_one, address_two, city, state)
+	def initialize(contractor_name, phone, website, postalcode, email, address_one, address_two, city, state)
 		self.OrganizationName = contractor_name
 		self.Phone = phone
 		self.WebSite = website
