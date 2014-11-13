@@ -21,7 +21,6 @@ class ContractorsController < ApplicationController
 				 	Contractor.create(:OrganizationName => c["OrganizationName"], :phone => c["Phone"], :website => c["WebSite"], :postalcode => c["postalcode"], :email => c["CorporateEmail"], :address_one => c["AddressLine1"], :address_two => c["AddressLine2"], :city => c["City"], :state => c["State"])
 				 end
 				end
-				redirect_to root_path
 		end
 	end
 
