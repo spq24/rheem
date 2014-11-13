@@ -19,9 +19,9 @@ class ContractorsController < ApplicationController
 				 	next
 				 else
 				 	Contractor.create(:OrganizationName => c["OrganizationName"], :phone => c["Phone"], :website => c["WebSite"], :postalcode => c["postalcode"], :email => c["CorporateEmail"], :address_one => c["AddressLine1"], :address_two => c["AddressLine2"], :city => c["City"], :state => c["State"])
-				 redirect_to root_path
 				 end
 				end
+				redirect_to root_path
 		end
 	end
 
