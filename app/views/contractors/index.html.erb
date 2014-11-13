@@ -1,0 +1,13 @@
+<% @contractors.each do |c| %>
+	<%= c.organizationname %><br />
+	<ul>
+		<li><%= c.phone %></li><br />
+		<li><%= c.website %></li><br />
+		<li><%= c.postalcode %></li><br />
+		<li><%= c.email %></li><br />
+		<li><%= c.address_one %></li><br />
+		<li><%= c.address_two %></li><br />
+		<li><%= c.city %></li><br />
+		<li><%= c.state %></li><br />
+	</ul><br />
+<% end %>
