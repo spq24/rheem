@@ -18,7 +18,7 @@ class ContractorsController < ApplicationController
 				 if Contractor.exists?(organizationname: contractorname)
 				 	next
 				 else
-				 	Contractor.create(:OrganizationName => c["OrganizationName"], :phone => c["Phone"], :website => c["WebSite"], :postalcode => c["postalcode"], :email => c["CorporateEmail"], :address_one => c["AddressLine1"], :address_two => c["AddressLine2"], :city => c["City"], :state => c["State"])
+				 	Contractor.create(:organizationname => c["OrganizationName"], :phone => c["Phone"], :website => c["WebSite"], :postalcode => c["postalcode"], :email => c["CorporateEmail"], :address_one => c["AddressLine1"], :address_two => c["AddressLine2"], :city => c["City"], :state => c["State"])
 				 end
 				end
 		end
@@ -27,6 +27,6 @@ class ContractorsController < ApplicationController
 	private
 
   def contractor_params
-    params.require(:contractor).permit(:OrganizationName, :phone, :website, :postalcode, :email, :address_one, :address_two, :city, :state)
+    params.require(:contractor).permit(:organizationname, :phone, :website, :postalcode, :email, :address_one, :address_two, :city, :state)
   end
 end
